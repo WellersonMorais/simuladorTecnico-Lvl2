@@ -1,70 +1,132 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Site</title>
-    
-    <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: sans-serif;
-            margin: 0;
-        }
-        .tudo {
-            width: 1000px;
-            background-color: white;
-            margin: 0 auto;
-        }
-        #topo {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .texto-ruim {
-            color: #d1d1d1;
-        }
-        .botoes {
-            padding: 50px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="barra_Navegacao">
+      <img src="/logoPlaceholder" alt="logo_do_site" />
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button id="botao_NavBar">comece agora!</button>
+    </nav>
 
-    <div class="tudo">
-        <div id="topo">
-            <big><h1>Bem-vindo à Empresa XPTO</h1></big>
-            <p>Soluções digitais desde 2000</p>
+    <main>
+        <div class="divisao_de_conteudo">
+            <h1>Tranformamos suas ideias em realidade</h1>
+
+            <p>
+                Entre desenvolvimento Web e aplicações mobile, nós criamos experiências
+                digitais quem farão sua empresa se destacar no mercado! Venha construir
+                seu futuro conosco.
+            </p>
+            <button id="botao1">Entre em contato</button>
+            <button id="botao2">Explore serviços</button>
+            <ul>
+                <li>98%</li>
+                <li>500+</li>
+                <li>24/7</li>
+            </ul>
         </div>
+      
+      <img src="imagens/photo-1728933102332-a4f1a281a621.jpeg" alt="">
+    </main>
+    <section id="section1">
+        <h2>nossos serviços</h2>
+        <ul>
+            <li>
+                <img src="imagens/laptop_428294.png" alt="imgPlaceholder">
+                <h3>tituloExemplo</h3>
+                <p>lorem ipsum sant est irem el</p>
+            </li>
 
-        <div style="padding: 40px; text-align: center;">
-            <h2>Nossos Serviços</h2>
-            <p class="texto-ruim">Este texto tem um contraste muito baixo e é difícil de ler.</p>
-            
-            <img src="https://via.placeholder.com/300" width="300" />
-            
-            <br><br>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+            <li>
+                <img src="imagens/laptop_428294.png" alt="imgPlaceholder">
+                <h3>tituloExemplo</h3>
+                <p>lorem ipsum sant est irem el</p>
+            </li>
 
-        <div class="botoes">
-            <button id="meuBotao" style="padding: 20px; background: red; color: white;" onclick="avisar()">
-                CLIQUE AQUI
-            </button>
-        </div>
+            <li>
+                <img src="imagens/laptop_428294.png" alt="imgPlaceholder">
+                <h3>tituloExemplo</h3>
+                <p>lorem ipsum sant est irem el</p>
+            </li>
 
-        <div id="rodape" style="background: #333; color: white; padding: 10px; text-align: center;">
-            <p>XPTO - Todos os direitos reservados</p>
-        </div>
-    </div>
+            <li>
+                <img src="imagens/laptop_428294.png" alt="imgPlaceholder">
+                <h3>tituloExemplo</h3>
+                <p>lorem ipsum sant est irem el</p>
+            </li>
 
-    <script>
-        function avisar() {
-            alert("Você clicou no botão!");
-        }
-    </script>
+            <li>
+                <img src="/imagens/laptop_428294.png" alt="imgPlaceholder">
+                <h3>tituloExemplo</h3>
+                <p>lorem ipsum sant est irem el</p>
+            </li>
 
-</body>
+            <li>
+                <img src="imagens/laptop_428294.png" alt="imgPlaceholder">
+                <h3>tituloExemplo</h3>
+                <p>lorem ipsum sant est irem el</p>
+            </li>
+        </ul>
+    </section>
+    <section id="section2">
+        <img src="" alt="">
+        <article>
+            <h2>titulo 4</h2>
+            <p>pdvnoegbnwoeivnaoienwoivensoi aenfoaien</p>
+            <ul>
+                <li>
+                    <img src="imagens/laptop_428294.png" alt="imgPlaceholder">
+                    <p>mini titulo</p>
+                    <p>descricao rápida do título</p>
+                </li>
+                <li>
+                    <img src="imagens/laptop_428294.png" alt="imgPlaceholder">
+                    <p>mini titulo</p>
+                    <p>descricao rápida do título</p>
+                </li>
+                <li>
+                    <img src="imagens/laptop_428294.png" alt="imgPlaceholder">
+                    <p>mini titulo</p>
+                    <p>descricao rápida do título</p>
+                </li>
+            </ul>
+        </article>
+        
+    </section>
+    <section id="section3">
+        <h2>titulo 5</h2>
+        <ul>
+            <li>
+                <img src="imagens/laptop_428294.png" alt="imgPlaceholder">
+                <p>contato</p>
+                <p>contato extendido</p>
+            </li>
+            <li>
+                <img src="imagens/laptop_428294.png" alt="imgPlaceholder">
+                <p>contato</p>
+                <p>contato extendido</p>
+            </li>
+            <li>
+                <img src="imagens/laptop_428294.png" alt="imgPlaceholder">
+                <p>contato</p>
+                <p>contato extendido</p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2024 DigiSolutions. All rights reserved. Made with ❤️ by our amazing team.</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>

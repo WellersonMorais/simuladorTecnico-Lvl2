@@ -1,0 +1,24 @@
+
+#section2 {
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+#section2 img {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+#section2 ul {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+#section2 li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
