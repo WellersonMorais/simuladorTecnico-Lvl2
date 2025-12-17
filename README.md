@@ -1,24 +1,84 @@
-# Simulador-Nível-2-Telos
+# Simulador Nível 2 – Telos
 
-# Projeto Legado - Empresa XPTO
+## Projeto Legado – Empresa XPTO
 
-Olá, dev! 👋
+Este repositório contém a **refatoração completa de um site legado da empresa fictícia XPTO**, realizada como parte do **Simulador Nível 2**.
 
-A empresa XPTO precisa modernizar este site antigo. Atualmente, todo o código está misturado em um único arquivo, o design não funciona em celulares e o código não segue as boas práticas atuais.
+O projeto original apresentava código desorganizado, ausência de responsividade, problemas de acessibilidade e más práticas no uso de HTML, CSS e JavaScript.  
+Todo o código foi modernizado seguindo boas práticas atuais de desenvolvimento front-end.
 
-## 🎯 Objetivo
-refatorar (melhorar) este código seguindo os requisitos do documento "Simulador Nível 2".
+---
 
-## 🛠 O que precisa ser feito?
-1. **Organização:** Separe o HTML, CSS e JavaScript em arquivos diferentes (`index.html`, `styles.css`, `index.js`).
-2. **HTML Semântico:** Substitua as `div` genéricas e tags obsoletas (como `<big>`) pelas tags corretas do HTML5 (`header`, `main`, `footer`, `section`).
-3. **Responsividade:** O site atual tem largura fixa de 1000px. Use **Flexbox** ou **Grid** para que ele funcione bem em celulares.
-4. **Acessibilidade:** Melhore o contraste das cores e adicione descrições (`alt`) nas imagens.
-5. **Interatividade:** O JavaScript atual está misturado no HTML. Mude para usar `addEventListener` no arquivo externo.
+## 🎯 Objetivo do Projeto
 
-## 🚀 Como começar
-1. Baixe o arquivo `index.html` deste repositório.
-2. Abra no seu VS Code.
-3. Comece a separar os arquivos e aplicar as melhorias!
+Refatorar o site legado, aplicando conceitos modernos de desenvolvimento web, organização de código, responsividade e acessibilidade.
 
-Boa sorte! 🚀
+---
+
+## 🛠️ Melhorias Implementadas
+
+### ✅ Organização do Código
+- Separação correta dos arquivos:
+  - `index.html`
+  - `styles.css`
+  - `index.js`
+
+---
+
+### ✅ HTML Semântico
+- Substituição de `divs` genéricas por tags semânticas do HTML5:
+  - `<header>`
+  - `<main>`
+  - `<section>`
+  - `<article>`
+  - `<footer>`
+- Remoção de tags obsoletas (como `<big>`)
+
+---
+
+### ✅ Responsividade
+- Remoção da largura fixa de 1000px
+- Implementação de layouts responsivos utilizando:
+  - **Flexbox**
+  - **CSS Grid**
+- Uso de media queries para adaptação em:
+  - Mobile
+  - Tablet
+  - Desktop
+
+---
+
+### ✅ Acessibilidade
+- Melhoria no contraste de cores
+- Adição de textos alternativos (`alt`) em todas as imagens
+- Melhor legibilidade e hierarquia visual do conteúdo
+
+---
+
+### ✅ Interatividade com JavaScript
+- Remoção de JavaScript inline
+- Implementação de eventos utilizando:
+  - `addEventListener`
+- Código JS organizado em arquivo externo
+
+---
+
+## 🚀 Resultado Final
+
+O site agora conta com:
+- Código limpo e organizado
+- Estrutura semântica correta
+- Design moderno e responsivo
+- Melhor acessibilidade
+- Boas práticas de JavaScript
+
+Este projeto demonstra a capacidade de **analisar, refatorar e modernizar código legado**, seguindo padrões profissionais de desenvolvimento front-end.
+
+---
+
+## 📌 Tecnologias Utilizadas
+
+- HTML5
+- CSS3 
+- JavaScript
+
