@@ -1,52 +1,134 @@
+
+
 main {
-  display: flex;
-  flex-direction: row;
-  padding: 4rem 9rem;
-  text-align: center;
-  margin: 0 auto;
+  padding: 4rem 1rem;
+  background-color: var(--cor-primaria);
+  
 }
 
 main h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+  font-size: 3.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 150;
+  line-height: 1;
+  color: var(--azul-para-texto);
 }
 
 main p {
-  margin-bottom: 2rem;
+  font-size: 1.30rem;
+  margin: 1.5rem 0rem;
   color: #555;
 }
-
-main button {
-  padding: 0.8rem 1.4rem;
-  margin: 0.5rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-main img {
-  height: 400px;
-  margin-left: 2rem;
+#mainImage {
+  align-self: center;
+  max-width: 100%;
+  max-height: 400px;
   border-radius: 15px;
 }
 main ul {
+  width: 90%;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-between;
   list-style: none;
   margin-top: 2rem;
 }
-
-main ul li {
-  font-size: 1.4rem;
-  font-weight: bold;
+.performance_indicators {
+  display: grid;
+  place-items: center;
+}
+.subtitulo_performance {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--azul-para-texto);
+}
+.descricao_performance {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--cinza-pa);
 }
 
+.highlited_text {
+  width: fit-content;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 9999px;
+  color: var(--amarelo-queimado);
+  background-color: var(--cor-secundaria);
 
-#botao1 {
-  background-color: #0f172a;
-  color: #fff;
 }
 
-#botao2 {
-  background-color: #e5e7eb;
+#botaoContato {
+  margin-right: 15px;
+  background-color: var(--azul-claro); 
+  color: var(--off-white);
+  padding: 18px 35px; 
+  margin-bottom: 10px;
+  border-radius: 9999px; 
+  font-size: 16px; 
+  font-weight: 400; 
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease-in-out; 
+}
+#botaoContato:hover {
+  background-color: #1c4aaf;
+}
+
+#botaoServico {
+  background-color: var(--off-white);
+  color: var(--azul-claro); 
+  padding: 18px 35px; 
+  border-radius: 9999px; 
+  font-size: 16px; 
+  font-weight: 400; 
+  cursor: pointer;
+  border: 2px solid var(--azul-claro);
+  transition: background-color 0.2s ease-in-out; 
+}
+#botaoServico:hover {
+  background-color: #c4d3e5; 
+}
+
+@media (max-width: 990px) {
+  #mainImage {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  #mainImage {
+    height: 250px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .limitacao_conteudo{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .highlited_text {
+    display: none;
+  }
+
+  #botaoContato, #botaoServico {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+  }
+
+  #mainImage {
+    height: auto;
+    width: 100%;
+  }
 }

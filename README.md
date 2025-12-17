@@ -6,8 +6,8 @@ Olá, dev! 👋
 
 A empresa XPTO precisa modernizar este site antigo. Atualmente, todo o código está misturado em um único arquivo, o design não funciona em celulares e o código não segue as boas práticas atuais.
 
-## 🎯 Seu Objetivo
-Você deve refatorar (melhorar) este código seguindo os requisitos do documento "Simulador Nível 2".
+## 🎯 Objetivo
+refatorar (melhorar) este código seguindo os requisitos do documento "Simulador Nível 2".
 
 ## 🛠 O que precisa ser feito?
 1. **Organização:** Separe o HTML, CSS e JavaScript em arquivos diferentes (`index.html`, `styles.css`, `index.js`).

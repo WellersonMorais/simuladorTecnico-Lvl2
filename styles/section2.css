@@ -1,24 +1,108 @@
 
 #section2 {
-  padding: 4rem 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
+  margin-top: 90px;
+  padding-top: 40px;
+  background: linear-gradient(-45deg, var(--cor-secundaria), var(--cor-primaria));
 }
 
-#section2 img {
-  height: 50px;
-  margin-bottom: 1rem;
+#section2 .limitacao_conteudo {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+#separaco_de_imagens_sec2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#separaco_de_imagens_sec2 img {
+  max-width: 60%;
+  height: auto; 
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+#section2 article {
+  flex: 1;
+}
+
+#section2 .highlited_text {
+  background-color: var(--azul-clarissimo);
+  color: var(--azul-para-texto);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#section2 h2 {
+  color: var(--azul-para-texto);
+  margin-bottom: 1.5rem;
+}
+
+#section2 article > p {
+  color: var(--cinza-para-texto);
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
 }
 
 #section2 ul {
   list-style: none;
-  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-#section2 li {
+#section2 ul li {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(234, 241, 245, 0.887);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#section2 ul li:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  transform: translateY(-4px);
+}
+
+/* imagem do item */
+#section2 ul li img {
+  width: auto;
+  height: 70px;
+}
+
+/* textos do item */
+#section2 ul li p {
+  font-weight: 600;
+  color: var(--azul-para-texto);
+  font-size: 2rem;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 1024px) {
+  #section2 .limitacao_conteudo {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #section2 .limitacao_conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #section2 article > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #section2 ul li {
+    text-align: left;
+  }
 }

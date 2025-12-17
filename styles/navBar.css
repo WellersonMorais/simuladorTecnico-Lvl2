@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 9rem;
-  background-color: #0f172a;
+  background-color: var(--off-white);
 }
 
 .barra_Navegacao img {
@@ -12,13 +12,13 @@
 
 .barra_Navegacao ul {
   display: flex;
-
   gap: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .barra_Navegacao a {
   text-decoration: none;
-  color: #fff;
+  color: var(--azul-para-texto);
   font-weight: 500;
 }
 
@@ -29,9 +29,9 @@
 #botao_NavBar {
   padding: 0.6rem 1rem;
   border: none;
-  border-radius: 4px;
-  background-color: #38bdf8;
-  color: #000;
-  font-weight: bold;
+  border-radius: 9999px;
+  background-color: var(--azul-claro);
+  color: var(--off-white);
+  font-size: 1rem;
   cursor: pointer;
 }
